@@ -1,7 +1,7 @@
 -- Updated WarmUp by Cybeloras of Mal'Ganis. Uses debugprofile start/stop instead of GetTime because it seems that GetTime() is not updated during loading screens anymore.
 -- Further updated by Phanx for WoW 6.x
 
-local containerFrame = CreateFrame("Frame", "WarmupOutputFrame", UIParent)
+local containerFrame = CreateFrame("Frame", "WarmupOutputFrame", UIParent, BackdropTemplateMixin and "BackdropTemplate")
 containerFrame:Hide()
 
 local outputFrame = CreateFrame("ScrollingMessageFrame", "WarmupChatFrame", containerFrame)
